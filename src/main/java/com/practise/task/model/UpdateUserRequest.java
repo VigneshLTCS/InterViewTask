@@ -1,14 +1,19 @@
 package com.practise.task.model;
 
+import org.bson.types.ObjectId;
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
 @AllArgsConstructor
-public class RegisterData {
+@NoArgsConstructor
+public class UpdateUserRequest {
+	private String id;
 	private String firstName;
 	private String lastName;
 	private String userName;
-	private String emailId;
 	private String phoneNumber;
+	private String emailId;
 }
